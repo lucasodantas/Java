@@ -15,9 +15,9 @@ public class Program {
 		System.out.println("How many rooms will be rented?");
 		int n = sc.nextInt();
 		
-		Rooms[] vect = new Rooms[10];
+		Rooms[] vect = new Rooms[n];
 		
-		for (int i=0; i<n; i++) {
+		for (int i=0; i<vect.length; i++) {
 			int rent = i + 1;
 			System.out.println("Rent #" + rent);
 			System.out.println("Name: ");
@@ -36,7 +36,7 @@ public class Program {
 			}
 		}
 		
-		for (int i=0; i<10; i++) {
+		for (int i=0; i<n; i++) {
 			if (vect[i] != null) {
 				System.out.println(i + ": " + vect[i]);
 			}
